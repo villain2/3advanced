@@ -1,0 +1,57 @@
+// gradient system
+$gradients: () !default;
+$gradients: map-merge((
+    navtop: linear-gradient(0deg, #323234 0%, #323033 100%)
+), $gradients);
+
+
+
+@mixin nav-bg-gradient($parent, $gradient) {
+    #{$parent} {
+        background: $gradient;
+    }
+}
+
+// gradient classes
+@each $gradient, $value in $gradients {
+    @include nav-bg-gradient(".nav-bg-gradient-#{$gradient}", $value);
+}
+
+.top-horizontal {
+    display: block;
+    background: #cdcdcd;
+    border-top: 1px solid #686868;
+    border-bottom: 1px solid #686868;
+    height: 4px;
+    width: 100%;
+    padding-top: 4px;
+}
+
+nav {
+    background-color: #312f32;
+    margin-top: 4px;
+    border-bottom: 1px solid #dadada;
+    .nav-link {
+        &.no-hover {
+            background: 312f32;
+            &:hover {
+                background: #312f32;
+            }
+        }
+        color: #f3f4f5;
+        text-transform: uppercase;
+        font-family: 'League Gothic', sans-serif;
+        &:hover {
+            background: #989898;
+        }
+    }
+
+    .logo {
+        background: url('/assets/images/logo.jpg');
+        width: 22px;
+        height: 15px;
+        display: block;
+        cursor: pointer;
+        margin-top: 4px;
+    }
+}

@@ -1,0 +1,20 @@
+.main-app {
+    width: 100%;
+    min-height: 25em;
+    margin-top: 0.75em;
+    background: navy;
+    position: fixed;
+    overflow: hidden;
+
+    .videoInsert {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -15em;
+        width: 100% !important;
+        height: auto !important;
+        background-size: cover;
+        z-index: -1;
+    }
+
+}
