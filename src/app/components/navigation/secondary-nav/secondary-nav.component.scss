@@ -1,0 +1,16 @@
+@import "../navbar/navbar.component.scss";
+
+.secondary-navbar {
+    @include nav;
+
+    .brand-message {
+        width: 50%;
+        height: auto;
+        padding: 0 12px;
+        color: #6d6d6f;
+        text-transform: uppercase;
+        font-family: 'League Gothic', sans-serif;
+        letter-spacing: 0.8rem;
+        margin-left: 2em;
+    }
+}

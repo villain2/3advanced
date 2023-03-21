@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import { NavHoverComponent } from './components/audio/nav-hover/nav-hover.component';
 import { BottomNavbarComponent } from './components/navigation/bottom-navbar/bottom-navbar.component';
+import { SecondaryNavComponent } from './components/navigation/secondary-nav/secondary-nav.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { BottomNavbarComponent } from './components/navigation/bottom-navbar/bot
     HomePageComponent,
     NavbarComponent,
     NavHoverComponent,
-    BottomNavbarComponent
+    BottomNavbarComponent,
+    SecondaryNavComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),

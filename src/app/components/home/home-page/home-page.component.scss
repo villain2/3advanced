@@ -1,20 +1,50 @@
-.main-app {
-    width: 100%;
-    min-height: 25em;
-    margin-top: 0.75em;
-    background: navy;
-    position: fixed;
+.video-container {
+    height: 500px;
+    position: relative;
     overflow: hidden;
 
-    .videoInsert {
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
         position: absolute;
-        top: 0;
-        left: 0;
-        margin-top: -15em;
-        width: 100% !important;
-        height: auto !important;
-        background-size: cover;
-        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.mid-bottom-border {
+    height: 2.25rem;
+    background-color: #686669;
+    width: 100%;
+    border-bottom: 2px solid #cbc9cc;
+}
+
+.bottom-border {
+    height: 1rem;
+    width: 100%;
+    background: #343235;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #343235;
+}
+
+.main-underneath {
+    a {
+        color: #f3f4f5;
+        text-decoration: none;
+    }
+    a:hover {
+        color: light-blue;
     }
 
+    
+    color: #6d6d6f;
+    text-transform: uppercase;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.25rem;
+    font-size: 0.55em;
+    padding: 0.25em 0;
 }
