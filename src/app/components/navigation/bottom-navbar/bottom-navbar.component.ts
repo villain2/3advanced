@@ -9,20 +9,23 @@ export class BottomNavbarComponent implements OnInit {
   // properties
   navBtn = document.getElementById('navBtn');
   audio = new Audio();
-  isPlaying: boolean = false;
-  audioButtonText: string = "Play Audio";
+  isPlaying: boolean = true;
+  audioButtonText: string = "Mute Audio";
 
   constructor() { }
 
   ngOnInit(): void {
-    this.audio.src = '../assets/audio/soundtrack.mp3';
+    this.audio.src = '../assets/audio/soundtrack-loop.mp3';
     this.audio.loop = true;
+    this.audio.volume = 0.2;
+    this.audio.play();
   }
 
   toggleSoundtrack() {
     this.audio.currentTime = 0;
     this.isPlaying = !this.isPlaying; 
     this.isPlaying == true ? this.audio.play() : this.audio.pause();
+    this.audio.volume = 0.2;
     this.updateAudioButton();
   }
 

@@ -1,3 +1,26 @@
-<div class="container-fluid">
-  <router-outlet></router-outlet>
+<app-navbar></app-navbar>
+
+<div class="video-container">
+    <video id="mainVideo" autoplay loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="../../../../assets/video/homepage-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <section class="main-content">
+        <router-outlet></router-outlet>
+    </section>
 </div>
+<app-secondary-nav></app-secondary-nav>
+<section class="mid-bottom-border">
+
+</section>
+
+<section class="bottom-border">
+
+</section>
+
+<section class="main-underneath">
+    &copy; 2023, KC Hunter | <a href="#">Copyright Notice</a>
+</section>
+
+<app-bottom-navbar></app-bottom-navbar>

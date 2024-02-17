@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
 body, html {
     background: #8c8a8c;
     color: #ffffff;
@@ -15,3 +17,30 @@ body, html {
     margin: 0;
 }
 
+.section-text-main-container {
+    border: 2px solid #fafafa;
+    width: 50%;
+    height: 300px;
+    margin: 6em 0 2em 8em;
+    padding: 2em;
+    display: block;
+    background: #000;
+    overflow-y: auto;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em/1.25em;
+
+    h1, h2 {
+        font-weight: 700;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        font-size: 2.25em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        letter-spacing: -0.01em;
+    }
+    
+}
