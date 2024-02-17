@@ -1,5 +1,15 @@
 .soundtrack-button {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin: 0.5em 0 0.5em 0.5em;
+    background: #333;
+    border: 1px solid #f1f1f1;
+    cursor: pointer;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    font-size: 0.75em;
+    color: #fff;
+    &:hover {
+        color: #b3b3a3;
+    }
+
 }
