@@ -5,6 +5,12 @@ $gradients: map-merge((
 ), $gradients);
 
 
+.top-nav-bar {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    margin: 3px 2px 0 0;
+}
 
 @mixin nav-bg-gradient($parent, $gradient) {
     #{$parent} {
@@ -34,6 +40,7 @@ $gradients: map-merge((
     border-bottom: 1px solid #dadada;
     .nav-link {
         &.no-hover {
+            padding-top: 0.2em;
             background: 312f32;
             &:hover {
                 background: #312f32;
@@ -42,6 +49,8 @@ $gradients: map-merge((
         color: #f3f4f5;
         text-transform: uppercase;
         font-family: 'League Gothic', sans-serif;
+        font-size: 0.75em;
+        letter-spacing: 0.25em;
         &:hover {
             background: #989898;
         }
@@ -53,7 +62,7 @@ $gradients: map-merge((
         height: 15px;
         display: block;
         cursor: pointer;
-        margin-top: 4px;
+        margin-top: 6px;
     }
 }
 
