@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
 
   playAudio() {
     this.audio.currentTime = 0;
-    this.audio.volume = 0.025;
+    this.audio.volume = 0.25;
     this.audio.play();
   }
 

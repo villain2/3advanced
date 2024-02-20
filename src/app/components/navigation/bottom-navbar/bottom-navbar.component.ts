@@ -17,7 +17,7 @@ export class BottomNavbarComponent implements OnInit {
   ngOnInit(): void {
     this.audio.src = '../assets/audio/soundtrack-loop.mp3';
     this.audio.loop = true;
-    this.audio.volume = 0.2;
+    this.audio.volume = 0.25;
     this.audio.play();
   }
 
@@ -25,7 +25,7 @@ export class BottomNavbarComponent implements OnInit {
     this.audio.currentTime = 0;
     this.isPlaying = !this.isPlaying; 
     this.isPlaying == true ? this.audio.play() : this.audio.pause();
-    this.audio.volume = 0.2;
+    this.audio.volume = 0.25;
     this.updateAudioButton();
   }
 
